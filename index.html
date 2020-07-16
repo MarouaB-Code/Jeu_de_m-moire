@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Jeux de mémoire</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay-text visible">
+  Jouer
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    Perdu
+    <span class="overlay-text-small">Rejouer</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    Bravo
+    <span class="overlay-text-small">Rejouer</span>
+  </div>
+  
+  <div>
+    <div class="info">
+      Temps restant: <span id="time-remaining">300</span>
+    </div>
+    <div class="info">
+      Nombre de clics:</br> <span id="flips">0</span>
+    </div>
+  </div>
+ 
+  <section class="memory-game">
+    <div class=card data-framework="tunisie">
+      <img class="card-value" src="img/tunisie.gif" alt="tunisie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="tunisie">
+      <img class="card-value" src="img/tunisie.gif" alt="tunisie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+
+    <div class=card data-framework="france">
+      <img class="card-value" src="img/francee.gif" alt="france" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="france">
+      <img class="card-value" src="img/francee.gif" alt="france" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+
+    <div class=card data-framework="turkie">
+      <img class="card-value" src="img/turkie1.gif" alt="turkie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="turkie">
+      <img class="card-value" src="img/turkie1.gif" alt="turkie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+
+    <div class=card data-framework="amerique">
+      <img class="card-value" src="img/amerique.gif" alt="amerique" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="amerique">
+      <img class="card-value" src="img/amerique.gif" alt="amerique" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+
+    <div class=card data-framework="lobnan">
+      <img class="card-value" src="img/lobnan.gif" alt="lobnan" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="lobnan">
+      <img class="card-value" src="img/lobnan.gif" alt="lobnan" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+
+    <div class=card data-framework="bretane">
+      <img class="card-value" src="img/bretane.gif" alt="bretane" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="bretane">
+      <img class="card-value" src="img/bretane.gif" alt="bretane" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	 <div class=card data-framework="irak">
+      <img class="card-value" src="img/irak.gif" alt="irak" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="irak">
+      <img class="card-value" src="img/irak.gif" alt="irak" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	<div class=card data-framework="russie">
+      <img class="card-value" src="img/russie.gif" alt="russie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="russie">
+      <img class="card-value" src="img/russie.gif" alt="russie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	<div class=card data-framework="quebecc">
+      <img class="card-value" src="img/quebecc.gif" alt="quebecc" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="quebecc">
+      <img class="card-value" src="img/quebecc.gif" alt="quebecc" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="kiniya">
+      <img class="card-value" src="img/kiniya.gif" alt="kiniya" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="kiniya">
+      <img class="card-value" src="img/kiniya.gif" alt="kiniya" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="egypte">
+      <img class="card-value" src="img/egypte.gif" alt="egypte" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="egypte">
+      <img class="card-value" src="img/egypte.gif" alt="egypte" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="espagne">
+      <img class="card-value" src="img/espagne.gif" alt="espagne" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="espagne">
+      <img class="card-value" src="img/espagne.gif" alt="espagne" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="italie">
+      <img class="card-value" src="img/italie.gif" alt="italie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="italie">
+      <img class="card-value" src="img/italie.gif" alt="italie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="congo">
+      <img class="card-value" src="img/congo.gif" alt="congo" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="congo">
+      <img class="card-value" src="img/congo.gif" alt="congo" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	
+	<div class=card data-framework="maroc">
+      <img class="card-value" src="img/maroc.gif" alt="maroc" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="maroc">
+      <img class="card-value" src="img/maroc.gif" alt="maroc" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	<div class=card data-framework="algerie">
+      <img class="card-value" src="img/algerie.gif" alt="algerie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="algerie">
+      <img class="card-value" src="img/algerie.gif" alt="algerie" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="Portugal">
+      <img class="card-value" src="img/Portugal.gif" alt="Portugal" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="Portugal">
+      <img class="card-value" src="img/Portugal.gif" alt="Portugal" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="moritania">
+      <img class="card-value" src="img/moritania.gif" alt="moritania" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="moritania">
+      <img class="card-value" src="img/moritania.gif" alt="moritania" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="senegal">
+      <img class="card-value" src="img/senegal.gif" alt="senegal" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="senegal">
+      <img class="card-value" src="img/senegal.gif" alt="senegal" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="saudi">
+      <img class="card-value" src="img/saudi.gif" alt="saudi" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="saudi">
+      <img class="card-value" src="img/saudi.gif" alt="saudi" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="inde">
+      <img class="card-value" src="img/inde.gif" alt="inde" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="inde">
+      <img class="card-value" src="img/inde.gif" alt="inde" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="chine">
+      <img class="card-value" src="img/chine.gif" alt="chine" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="chine">
+      <img class="card-value" src="img/chine.gif" alt="chine" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="bresil">
+      <img class="card-value" src="img/bresil.gif" alt="bresil" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="bresil">
+      <img class="card-value" src="img/bresil.gif" alt="bresil" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="japn">
+      <img class="card-value" src="img/japn.gif" alt="japn" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="japn">
+      <img class="card-value" src="img/japn.gif" alt="japn" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="mexique">
+      <img class="card-value" src="img/mexique.gif" alt="mexique" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="mexique">
+      <img class="card-value" src="img/mexique.gif" alt="mexique" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="qatar">
+      <img class="card-value" src="img/qatar.gif" alt="qatar" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="qatar">
+      <img class="card-value" src="img/qatar.gif" alt="qatar" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="argentine">
+      <img class="card-value" src="img/argentine.gif" alt="argentine" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="argentine">
+      <img class="card-value" src="img/argentine.gif" alt="argentine" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	<div class=card data-framework="haiti">
+      <img class="card-value" src="img/haiti.gif" alt="haiti" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="haiti">
+      <img class="card-value" src="img/haiti.gif" alt="haiti" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	<div class=card data-framework="canada">
+      <img class="card-value" src="img/canada.gif" alt="canada" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="canada">
+      <img class="card-value" src="img/canada.gif" alt="canada" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+	<div class=card data-framework="irland">
+      <img class="card-value" src="img/irland.gif" alt="irland" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+    <div class=card data-framework="irland">
+      <img class="card-value" src="img/irland.gif" alt="irland" />
+      <img class="back-face" src="img/cardd.png" alt="JS Badge" />
+    </div>
+	
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
